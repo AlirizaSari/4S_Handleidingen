@@ -34,13 +34,18 @@
                 @yield('breadcrumb')
             </ul>
 
+
         </div>
     </div>
 </div>
 
 <div class="row-footer">
-    @include('includes.footer')
+        @include('includes.footer')
 </div>
+
+
+
+
 
 
 
