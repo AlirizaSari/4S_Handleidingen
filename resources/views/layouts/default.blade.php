@@ -36,12 +36,15 @@
 
 
         </div>
+
+        <div class="row-footer">
+            @include('includes.footer')
+        </div>
+
     </div>
 </div>
 
-<div class="row-footer">
-        @include('includes.footer')
-</div>
+
 
 
 
