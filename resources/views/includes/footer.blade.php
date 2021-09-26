@@ -20,7 +20,6 @@
 <!-- Einde analytics code -->
 
 <script language="Javascript" type="text/javascript"> 
- <!-- 
  if (top.location!= self.location) { 
   top.location = self.location.href
  } 
