@@ -1,6 +1,23 @@
 
 <footer>
-  © {{ __('misc.copyright') }}
+  <div class="footer-content">
+
+    <div class="footer-section about">
+      <h3>Over Ons</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat aliquam suscipit minima. Excepturi architecto inventore exercitationem reprehenderit placeat similique porro, nulla omnis voluptatum in quisquam beatae, velit ipsam pariatur vitae.</p>
+    </div>
+
+    <div class="footer-section contact">
+      <span><i class="fas fa-phone"></i> &nbsp; 06-12345678</span>
+      <span><i class="fas fa-envelope"></i> &nbsp; 4s@info.nl</span>
+    </div>
+    <div class="footer-section links">
+
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © {{ __('misc.copyright') }}
+  </div>
 </footer>
 
 
