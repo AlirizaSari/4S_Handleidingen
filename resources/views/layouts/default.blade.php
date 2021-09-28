@@ -9,38 +9,41 @@
 
 @include('includes.navbar')
 
-<div class="container">
-    <div class="row">
+<div class="wrapper">
+    <div class="container">
+        <div class="row">
 
-        <div class="col-md-8">
-            @include('includes.header')
+            <div class="col-md-8">
+                @include('includes.header')
 
-            <ul class="breadcrumb">
-                <li><a href="/" title="{{ __('misc.home_alt') }}"
+                <ul class="breadcrumb">
+                    <li><a href="/" title="{{ __('misc.home_alt') }}"
                        alt="{{ __('misc.home_alt') }}">{{ __('misc.home') }}</a></li>
-                @yield('breadcrumb')
-            </ul>
+                    @yield('breadcrumb')
+                </ul>
 
-            @if ( isset($_GET['q']) )
-                @include('includes.search_results')
-            @else
-                @yield('content')
-            @endif
+                @if ( isset($_GET['q']) )
+                    @include('includes.search_results')
+                @else
+                    @yield('content')
+                @endif
 
-            <ul class="breadcrumb">
-                <li>
-					<a href="/" title="{{ __('misc.home_alt') }}" alt="{{ __('misc.home_alt') }}">{{ __('misc.home') }}</a>
-				</li>
-                @yield('breadcrumb')
-            </ul>
+                <ul class="breadcrumb">
+                    <li>
+					    <a href="/" title="{{ __('misc.home_alt') }}" alt="{{ __('misc.home_alt') }}">{{ __('misc.home') }}</a>
+				    </li>
+                    @yield('breadcrumb')
+                </ul>
 
+            </div>
         </div>
+    </div>
+
+    <div class="row-footer">
+        @include('includes.footer')
     </div>
 </div>
 
-<div class="row-footer">
-    @include('includes.footer')
-</div>
 
 
 

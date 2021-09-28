@@ -9,3 +9,4 @@
 <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 
 <title>Download your manual: Free user guides for all brands and devices!</title>
+<script src="https://kit.fontawesome.com/1793fc5f13.js" crossorigin="anonymous"></script>

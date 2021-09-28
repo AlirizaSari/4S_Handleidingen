@@ -8,13 +8,20 @@
     </div>
 
     <div class="footer-section contact">
+      <h3>Contact</h3>
       <span><i class="fas fa-phone"></i> &nbsp; 06-12345678</span>
+      <br>
       <span><i class="fas fa-envelope"></i> &nbsp; 4s@info.nl</span>
     </div>
-    <div class="footer-section links">
 
+    <div class="footer-section links">
+      <h3>Volg Ons</h3>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
     </div>
   </div>
+
   <div class="footer-bottom">
     © {{ __('misc.copyright') }}
   </div>
