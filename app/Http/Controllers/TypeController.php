@@ -10,6 +10,7 @@ class TypeController extends Controller
 {
     public function show($brand_id, $brand_slug, $type_id, $type_slug)
     {
+        Type::find($type_id)->increment('views');
         $brand = Brand::findOrFail($brand_id);
         $type = Type::findOrFail($type_id);
         $manuals = $type->Manuals()->get();

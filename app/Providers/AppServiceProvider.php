@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +25,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        View::share('popular_manuals',\App\Models\Type::orderBy('views','desc')->limit('10')->get());
+        View::share('popular_type_manuals',\App\Models\Type::orderBy('views','desc')->limit('5')->get());
+
     }
 }

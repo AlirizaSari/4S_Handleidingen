@@ -8,6 +8,17 @@
 
 @section('content')
 
+    <h1>Top 10 populairste handleidingen</h1>
+    <ul class="grid-container">
+        @if($popular_manuals)
+		    @foreach($popular_manuals as $brand)
+			    <li>
+                    <a href="/{{ $brand->id }}/{{ $brand->name_url_encoded }}/">{{ $brand->name }}</a>
+			    </li>
+            @endforeach
+	    @endif
+    </ul>
+
     <h1>
         @section('title')
             {{ __('misc.all_brands') }}

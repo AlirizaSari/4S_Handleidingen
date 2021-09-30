@@ -25,7 +25,9 @@
 			<a href="{{ $manual->url }}" target="new" alt="{{ __('misc.download_manual_alt') }}" title="{{ __('misc.download_manual_alt') }}">{{ __('misc.download_manual') }}</a>
 		@endif
 		
+		<span class="float-right">Totaal aantal bekeken: {{ $type->views }}</span>
+
 		<br />
 	@endforeach
- 
+
 @stop
