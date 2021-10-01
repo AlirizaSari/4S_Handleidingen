@@ -27,6 +27,5 @@ class AppServiceProvider extends ServiceProvider
     {
         View::share('popular_manuals',\App\Models\Type::orderBy('views','desc')->limit('10')->get());
         View::share('popular_type_manuals',\App\Models\Type::orderBy('views','desc')->limit('5')->get());
-
     }
 }
