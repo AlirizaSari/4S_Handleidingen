@@ -16,7 +16,7 @@ class BrandController extends Controller
 
         return view('pages/type_list', [
             "types"=>$types,
-            "brand"=>$brand
+            "brand"=>$brand,
         ]);
 
     }
